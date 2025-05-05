@@ -1,0 +1,492 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/lotanna/Documents/wifi_driver/wifi_driver/build/bootloader/esp-idf/esptool_py && /home/lotanna/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/lotanna/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/lotanna/Documents/wifi_driver/wifi_driver/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi_driver.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/wifi_driver.c.obj 
+/home/lotanna/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.4.1\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/lotanna/Documents/wifi_driver/wifi_driver/build/config -I/home/lotanna/Documents/wifi_driver/wifi_driver/main -I/home/lotanna/esp/esp-idf/components/newlib/platform_include -I/home/lotanna/esp/esp-idf/components/freertos/config/include -I/home/lotanna/esp/esp-idf/components/freertos/config/include/freertos -I/home/lotanna/esp/esp-idf/components/freertos/config/xtensa/include -I/home/lotanna/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/lotanna/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/lotanna/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/lotanna/esp/esp-idf/components/freertos/esp_additions/include -I/home/lotanna/esp/esp-idf/components/esp_hw_support/include -I/home/lotanna/esp/esp-idf/components/esp_hw_support/include/soc -I/home/lotanna/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/lotanna/esp/esp-idf/components/esp_hw_support/dma/include -I/home/lotanna/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/lotanna/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/lotanna/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/lotanna/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/lotanna/esp/esp-idf/components/heap/include -I/home/lotanna/esp/esp-idf/components/heap/tlsf -I/home/lotanna/esp/esp-idf/components/log/include -I/home/lotanna/esp/esp-idf/components/soc/include -I/home/lotanna/esp/esp-idf/components/soc/esp32 -I/home/lotanna/esp/esp-idf/components/soc/esp32/include -I/home/lotanna/esp/esp-idf/components/soc/esp32/register -I/home/lotanna/esp/esp-idf/components/hal/platform_port/include -I/home/lotanna/esp/esp-idf/components/hal/esp32/include -I/home/lotanna/esp/esp-idf/components/hal/include -I/home/lotanna/esp/esp-idf/components/esp_rom/include -I/home/lotanna/esp/esp-idf/components/esp_rom/esp32/include -I/home/lotanna/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/lotanna/esp/esp-idf/components/esp_rom/esp32 -I/home/lotanna/esp/esp-idf/components/esp_common/include -I/home/lotanna/esp/esp-idf/components/esp_system/include -I/home/lotanna/esp/esp-idf/components/esp_system/port/soc -I/home/lotanna/esp/esp-idf/components/esp_system/port/include/private -I/home/lotanna/esp/esp-idf/components/xtensa/esp32/include -I/home/lotanna/esp/esp-idf/components/xtensa/include -I/home/lotanna/esp/esp-idf/components/xtensa/deprecated_include -I/home/lotanna/esp/esp-idf/components/lwip/include -I/home/lotanna/esp/esp-idf/components/lwip/include/apps -I/home/lotanna/esp/esp-idf/components/lwip/include/apps/sntp -I/home/lotanna/esp/esp-idf/components/lwip/lwip/src/include -I/home/lotanna/esp/esp-idf/components/lwip/port/include -I/home/lotanna/esp/esp-idf/components/lwip/port/freertos/include -I/home/lotanna/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/lotanna/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/lotanna/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/lotanna/esp/esp-idf/components/esp_driver_gpio/include -I/home/lotanna/esp/esp-idf/components/esp_pm/include -I/home/lotanna/esp/esp-idf/components/mbedtls/port/include -I/home/lotanna/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/lotanna/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/lotanna/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/lotanna/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/lotanna/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/lotanna/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/lotanna/esp/esp-idf/components/esp_app_format/include -I/home/lotanna/esp/esp-idf/components/esp_bootloader_format/include -I/home/lotanna/esp/esp-idf/components/app_update/include -I/home/lotanna/esp/esp-idf/components/bootloader_support/include -I/home/lotanna/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/lotanna/esp/esp-idf/components/esp_partition/include -I/home/lotanna/esp/esp-idf/components/efuse/include -I/home/lotanna/esp/esp-idf/components/efuse/esp32/include -I/home/lotanna/esp/esp-idf/components/esp_mm/include -I/home/lotanna/esp/esp-idf/components/spi_flash/include -I/home/lotanna/esp/esp-idf/components/esp_security/include -I/home/lotanna/esp/esp-idf/components/pthread/include -I/home/lotanna/esp/esp-idf/components/esp_timer/include -I/home/lotanna/esp/esp-idf/components/esp_driver_gptimer/include -I/home/lotanna/esp/esp-idf/components/esp_ringbuf/include -I/home/lotanna/esp/esp-idf/components/esp_driver_uart/include -I/home/lotanna/esp/esp-idf/components/vfs/include -I/home/lotanna/esp/esp-idf/components/app_trace/include -I/home/lotanna/esp/esp-idf/components/esp_event/include -I/home/lotanna/esp/esp-idf/components/nvs_flash/include -I/home/lotanna/esp/esp-idf/components/esp_driver_pcnt/include -I/home/lotanna/esp/esp-idf/components/esp_driver_spi/include -I/home/lotanna/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/lotanna/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/lotanna/esp/esp-idf/components/esp_driver_i2s/include -I/home/lotanna/esp/esp-idf/components/sdmmc/include -I/home/lotanna/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/lotanna/esp/esp-idf/components/esp_driver_sdspi/include -I/home/lotanna/esp/esp-idf/components/esp_driver_sdio/include -I/home/lotanna/esp/esp-idf/components/esp_driver_dac/include -I/home/lotanna/esp/esp-idf/components/esp_driver_rmt/include -I/home/lotanna/esp/esp-idf/components/esp_driver_tsens/include -I/home/lotanna/esp/esp-idf/components/esp_driver_sdm/include -I/home/lotanna/esp/esp-idf/components/esp_driver_i2c/include -I/home/lotanna/esp/esp-idf/components/esp_driver_ledc/include -I/home/lotanna/esp/esp-idf/components/esp_driver_parlio/include -I/home/lotanna/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/lotanna/esp/esp-idf/components/driver/deprecated -I/home/lotanna/esp/esp-idf/components/driver/i2c/include -I/home/lotanna/esp/esp-idf/components/driver/touch_sensor/include -I/home/lotanna/esp/esp-idf/components/driver/twai/include -I/home/lotanna/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/lotanna/esp/esp-idf/components/esp_phy/include -I/home/lotanna/esp/esp-idf/components/esp_phy/esp32/include -I/home/lotanna/esp/esp-idf/components/esp_vfs_console/include -I/home/lotanna/esp/esp-idf/components/esp_netif/include -I/home/lotanna/esp/esp-idf/components/wpa_supplicant/include -I/home/lotanna/esp/esp-idf/components/wpa_supplicant/port/include -I/home/lotanna/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/lotanna/esp/esp-idf/components/esp_coex/include -I/home/lotanna/esp/esp-idf/components/esp_wifi/include -I/home/lotanna/esp/esp-idf/components/esp_wifi/include/local -I/home/lotanna/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/lotanna/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/lotanna/esp/esp-idf/components/unity/include -I/home/lotanna/esp/esp-idf/components/unity/unity/src -I/home/lotanna/esp/esp-idf/components/cmock/CMock/src -I/home/lotanna/esp/esp-idf/components/console -I/home/lotanna/esp/esp-idf/components/http_parser -I/home/lotanna/esp/esp-idf/components/esp-tls -I/home/lotanna/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/lotanna/esp/esp-idf/components/esp_adc/include -I/home/lotanna/esp/esp-idf/components/esp_adc/interface -I/home/lotanna/esp/esp-idf/components/esp_adc/esp32/include -I/home/lotanna/esp/esp-idf/components/esp_adc/deprecated/include -I/home/lotanna/esp/esp-idf/components/esp_driver_isp/include -I/home/lotanna/esp/esp-idf/components/esp_driver_cam/include -I/home/lotanna/esp/esp-idf/components/esp_driver_cam/interface -I/home/lotanna/esp/esp-idf/components/esp_driver_jpeg/include -I/home/lotanna/esp/esp-idf/components/esp_driver_ppa/include -I/home/lotanna/esp/esp-idf/components/esp_eth/include -I/home/lotanna/esp/esp-idf/components/esp_gdbstub/include -I/home/lotanna/esp/esp-idf/components/esp_hid/include -I/home/lotanna/esp/esp-idf/components/tcp_transport/include -I/home/lotanna/esp/esp-idf/components/esp_http_client/include -I/home/lotanna/esp/esp-idf/components/esp_http_server/include -I/home/lotanna/esp/esp-idf/components/esp_https_ota/include -I/home/lotanna/esp/esp-idf/components/esp_https_server/include -I/home/lotanna/esp/esp-idf/components/esp_psram/include -I/home/lotanna/esp/esp-idf/components/esp_lcd/include -I/home/lotanna/esp/esp-idf/components/esp_lcd/interface -I/home/lotanna/esp/esp-idf/components/protobuf-c/protobuf-c -I/home/lotanna/esp/esp-idf/components/protocomm/include/common -I/home/lotanna/esp/esp-idf/components/protocomm/include/security -I/home/lotanna/esp/esp-idf/components/protocomm/include/transports -I/home/lotanna/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/home/lotanna/esp/esp-idf/components/protocomm/proto-c -I/home/lotanna/esp/esp-idf/components/esp_local_ctrl/include -I/home/lotanna/esp/esp-idf/components/espcoredump/include -I/home/lotanna/esp/esp-idf/components/espcoredump/include/port/xtensa -I/home/lotanna/esp/esp-idf/components/wear_levelling/include -I/home/lotanna/esp/esp-idf/components/fatfs/diskio -I/home/lotanna/esp/esp-idf/components/fatfs/src -I/home/lotanna/esp/esp-idf/components/fatfs/vfs -I/home/lotanna/esp/esp-idf/components/idf_test/include -I/home/lotanna/esp/esp-idf/components/idf_test/include/esp32 -I/home/lotanna/esp/esp-idf/components/ieee802154/include -I/home/lotanna/esp/esp-idf/components/json/cJSON -I/home/lotanna/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/lotanna/esp/esp-idf/components/nvs_sec_provider/include -I/home/lotanna/esp/esp-idf/components/perfmon/include -I/home/lotanna/esp/esp-idf/components/rt/include -I/home/lotanna/esp/esp-idf/components/spiffs/include -I/home/lotanna/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/lotanna/Documents/wifi_driver/wifi_driver=. -fmacro-prefix-map=/home/lotanna/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/wifi_driver.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/wifi_driver.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/wifi_driver.c.obj -c /home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c
+In file included from /home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif.h:12,
+                 from /home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:4:
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c: In function 'lotanna_connect':
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:50:45: note: in expansion of macro 'esp_ip4_addr1'
+   50 | #define esp_ip4_addr1_16(ipaddr) ((uint16_t)esp_ip4_addr1(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:55:24: note: in expansion of macro 'esp_ip4_addr1_16'
+   55 | #define IP2STR(ipaddr) esp_ip4_addr1_16(ipaddr), \
+      |                        ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in expansion of macro 'IP2STR'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:51:45: note: in expansion of macro 'esp_ip4_addr2'
+   51 | #define esp_ip4_addr2_16(ipaddr) ((uint16_t)esp_ip4_addr2(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:56:5: note: in expansion of macro 'esp_ip4_addr2_16'
+   56 |     esp_ip4_addr2_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in expansion of macro 'IP2STR'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:52:45: note: in expansion of macro 'esp_ip4_addr3'
+   52 | #define esp_ip4_addr3_16(ipaddr) ((uint16_t)esp_ip4_addr3(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:57:5: note: in expansion of macro 'esp_ip4_addr3_16'
+   57 |     esp_ip4_addr3_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in expansion of macro 'IP2STR'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:53:45: note: in expansion of macro 'esp_ip4_addr4'
+   53 | #define esp_ip4_addr4_16(ipaddr) ((uint16_t)esp_ip4_addr4(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:58:5: note: in expansion of macro 'esp_ip4_addr4_16'
+   58 |     esp_ip4_addr4_16(ipaddr)
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:182:137: note: in expansion of macro 'IP2STR'
+  182 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:50:45: note: in expansion of macro 'esp_ip4_addr1'
+   50 | #define esp_ip4_addr1_16(ipaddr) ((uint16_t)esp_ip4_addr1(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:55:24: note: in expansion of macro 'esp_ip4_addr1_16'
+   55 | #define IP2STR(ipaddr) esp_ip4_addr1_16(ipaddr), \
+      |                        ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in expansion of macro 'IP2STR'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:51:45: note: in expansion of macro 'esp_ip4_addr2'
+   51 | #define esp_ip4_addr2_16(ipaddr) ((uint16_t)esp_ip4_addr2(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:56:5: note: in expansion of macro 'esp_ip4_addr2_16'
+   56 |     esp_ip4_addr2_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in expansion of macro 'IP2STR'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:52:45: note: in expansion of macro 'esp_ip4_addr3'
+   52 | #define esp_ip4_addr3_16(ipaddr) ((uint16_t)esp_ip4_addr3(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:57:5: note: in expansion of macro 'esp_ip4_addr3_16'
+   57 |     esp_ip4_addr3_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in expansion of macro 'IP2STR'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:53:45: note: in expansion of macro 'esp_ip4_addr4'
+   53 | #define esp_ip4_addr4_16(ipaddr) ((uint16_t)esp_ip4_addr4(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:58:5: note: in expansion of macro 'esp_ip4_addr4_16'
+   58 |     esp_ip4_addr4_16(ipaddr)
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:183:137: note: in expansion of macro 'IP2STR'
+  183 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:50:45: note: in expansion of macro 'esp_ip4_addr1'
+   50 | #define esp_ip4_addr1_16(ipaddr) ((uint16_t)esp_ip4_addr1(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:55:24: note: in expansion of macro 'esp_ip4_addr1_16'
+   55 | #define IP2STR(ipaddr) esp_ip4_addr1_16(ipaddr), \
+      |                        ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in expansion of macro 'IP2STR'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:51:45: note: in expansion of macro 'esp_ip4_addr2'
+   51 | #define esp_ip4_addr2_16(ipaddr) ((uint16_t)esp_ip4_addr2(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:56:5: note: in expansion of macro 'esp_ip4_addr2_16'
+   56 |     esp_ip4_addr2_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in expansion of macro 'IP2STR'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:52:45: note: in expansion of macro 'esp_ip4_addr3'
+   52 | #define esp_ip4_addr3_16(ipaddr) ((uint16_t)esp_ip4_addr3(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:57:5: note: in expansion of macro 'esp_ip4_addr3_16'
+   57 |     esp_ip4_addr3_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in expansion of macro 'IP2STR'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:53:45: note: in expansion of macro 'esp_ip4_addr4'
+   53 | #define esp_ip4_addr4_16(ipaddr) ((uint16_t)esp_ip4_addr4(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:58:5: note: in expansion of macro 'esp_ip4_addr4_16'
+   58 |     esp_ip4_addr4_16(ipaddr)
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:184:137: note: in expansion of macro 'IP2STR'
+  184 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:50:45: note: in expansion of macro 'esp_ip4_addr1'
+   50 | #define esp_ip4_addr1_16(ipaddr) ((uint16_t)esp_ip4_addr1(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:55:24: note: in expansion of macro 'esp_ip4_addr1_16'
+   55 | #define IP2STR(ipaddr) esp_ip4_addr1_16(ipaddr), \
+      |                        ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in expansion of macro 'IP2STR'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:51:45: note: in expansion of macro 'esp_ip4_addr2'
+   51 | #define esp_ip4_addr2_16(ipaddr) ((uint16_t)esp_ip4_addr2(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:56:5: note: in expansion of macro 'esp_ip4_addr2_16'
+   56 |     esp_ip4_addr2_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in expansion of macro 'IP2STR'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:52:45: note: in expansion of macro 'esp_ip4_addr3'
+   52 | #define esp_ip4_addr3_16(ipaddr) ((uint16_t)esp_ip4_addr3(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:57:5: note: in expansion of macro 'esp_ip4_addr3_16'
+   57 |     esp_ip4_addr3_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in expansion of macro 'IP2STR'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:53:45: note: in expansion of macro 'esp_ip4_addr4'
+   53 | #define esp_ip4_addr4_16(ipaddr) ((uint16_t)esp_ip4_addr4(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:58:5: note: in expansion of macro 'esp_ip4_addr4_16'
+   58 |     esp_ip4_addr4_16(ipaddr)
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:185:137: note: in expansion of macro 'IP2STR'
+  185 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:50:45: note: in expansion of macro 'esp_ip4_addr1'
+   50 | #define esp_ip4_addr1_16(ipaddr) ((uint16_t)esp_ip4_addr1(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:55:24: note: in expansion of macro 'esp_ip4_addr1_16'
+   55 | #define IP2STR(ipaddr) esp_ip4_addr1_16(ipaddr), \
+      |                        ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in expansion of macro 'IP2STR'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:51:45: note: in expansion of macro 'esp_ip4_addr2'
+   51 | #define esp_ip4_addr2_16(ipaddr) ((uint16_t)esp_ip4_addr2(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:56:5: note: in expansion of macro 'esp_ip4_addr2_16'
+   56 |     esp_ip4_addr2_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in expansion of macro 'IP2STR'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:52:45: note: in expansion of macro 'esp_ip4_addr3'
+   52 | #define esp_ip4_addr3_16(ipaddr) ((uint16_t)esp_ip4_addr3(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:57:5: note: in expansion of macro 'esp_ip4_addr3_16'
+   57 |     esp_ip4_addr3_16(ipaddr), \
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in expansion of macro 'IP2STR'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:67: error: 'wifi_ap_record_t' has no member named 'ip'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |                                                                   ^
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:43:65: note: in definition of macro 'esp_ip4_addr_get_byte'
+   43 | #define esp_ip4_addr_get_byte(ipaddr, idx) (((const uint8_t*)(&(ipaddr)->addr))[idx])
+      |                                                                 ^~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:53:45: note: in expansion of macro 'esp_ip4_addr4'
+   53 | #define esp_ip4_addr4_16(ipaddr) ((uint16_t)esp_ip4_addr4(ipaddr))
+      |                                             ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:58:5: note: in expansion of macro 'esp_ip4_addr4_16'
+   58 |     esp_ip4_addr4_16(ipaddr)
+      |     ^~~~~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:186:137: note: in expansion of macro 'IP2STR'
+  186 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:205:38: note: in expansion of macro 'ESP_LOG_LEVEL'
+  205 |         if (_ESP_LOG_ENABLED(level)) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                      ^~~~~~~~~~~~~
+/home/lotanna/esp/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:34:13: note: in expansion of macro 'ESP_LOGI'
+   34 |             ESP_LOGI("WIFI", "IP Address: " IPSTR, IP2STR(&ap_info.ip));
+      |             ^~~~~~~~
+ninja: build stopped: subcommand failed.

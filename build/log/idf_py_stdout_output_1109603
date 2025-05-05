@@ -1,0 +1,11 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/lotanna/Documents/wifi_driver/wifi_driver/build/bootloader/esp-idf/esptool_py && /home/lotanna/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/lotanna/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/lotanna/Documents/wifi_driver/wifi_driver/build/bootloader/bootloader.bin
+Bootloader binary size 0x6580 bytes. 0xa80 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi_driver.c.obj
+/home/lotanna/Documents/wifi_driver/wifi_driver/main/wifi_driver.c:11:27: warning: 'wifi_event_group' defined but not used [-Wunused-variable]
+   11 | static EventGroupHandle_t wifi_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld

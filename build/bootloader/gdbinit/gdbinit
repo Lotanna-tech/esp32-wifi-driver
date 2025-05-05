@@ -1,0 +1,2 @@
+source /home/lotanna/Documents/wifi_driver/wifi_driver/build/bootloader/gdbinit/symbols
+source /home/lotanna/Documents/wifi_driver/wifi_driver/build/bootloader/gdbinit/connect

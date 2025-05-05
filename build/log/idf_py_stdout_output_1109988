@@ -1,0 +1,89 @@
+xxx����: Initializing. RAM�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  5 2025 14:24:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=18788h (100232) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=000287b0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (124) esp_image: segment 2: paddr=000287d4 vaddr=3ffb0000 size=03ea4h ( 16036) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=0002c680 vaddr=40080000 size=03998h ( 14744) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=828cch (534732) map[0m
+[0;32mI (326) esp_image: segment 5: paddr=000b28f4 vaddr=40083998 size=13e00h ( 81408) load[0m
+[0;32mI (369) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (369) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) cpu_start: Multicore app[0m
+[0;32mI (388) cpu_start: Pro cpu start user code[0m
+[0;32mI (388) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (388) app_init: Application information:[0m
+[0;32mI (388) app_init: Project name:     wifi_driver[0m
+[0;32mI (392) app_init: App version:      1[0m
+[0;32mI (395) app_init: Compile time:     May  5 2025 14:23:40[0m
+[0;32mI (401) app_init: ELF file SHA256:  64ea77194...[0m
+[0;32mI (405) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (409) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (412) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (416) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (421) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (427) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (432) heap_init: At 3FFB8150 len 00027EB0 (159 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (442) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (448) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (455) spi_flash: detected chip: generic[0m
+[0;32mI (457) spi_flash: flash io: dio[0m
+[0;32mI (461) main_task: Started on CPU0[0m
+[0;32mI (471) main_task: Calling app_main()[0m
+[0;32mI (501) wifi:wifi driver task: 3ffc0148, prio:23, stack:6656, core=0[0m
+[0;32mI (511) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (511) wifi:wifi certification version: v7.0[0m
+[0;32mI (511) wifi:config NVS flash: enabled[0m
+[0;32mI (511) wifi:config nano formatting: disabled[0m
+[0;32mI (521) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (521) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (521) wifi:Init management short buffer num: 32[0m
+[0;32mI (531) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (531) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (541) wifi:Init static rx buffer num: 10[0m
+[0;32mI (541) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (551) wifi_init: rx ba win: 6[0m
+[0;32mI (551) wifi_init: accept mbox: 6[0m
+[0;32mI (551) wifi_init: tcpip mbox: 32[0m
+[0;32mI (551) wifi_init: udp mbox: 6[0m
+[0;32mI (561) wifi_init: tcp mbox: 6[0m
+[0;32mI (561) wifi_init: tcp tx win: 5760[0m
+[0;32mI (561) wifi_init: tcp rx win: 5760[0m
+[0;32mI (571) wifi_init: tcp mss: 1440[0m
+[0;32mI (571) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (571) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (581) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (591) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (671) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (691) wifi:mode : sta (94:54:c5:80:82:28)[0m
+[0;32mI (691) wifi:enable tsf[0m
+[0;32mI (801) TAG: Successfully connected to Netfiber[0m
+[0;32mI (801) main_task: Returned from app_main()[0m
+[0;32mI (801) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (811) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (811) wifi:state: auth -> init (0x2c0)[0m
+[0;32mI (861) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
